@@ -1,0 +1,21 @@
+root: true
+env:
+  node: true
+  jest: true
+
+plugins:
+  - jest
+
+extends:
+  - airbnb
+  - plugin:jest/recommended
+
+rules:
+  no-plusplus: off
+  no-underscore-dangle: off
+  no-await-in-loop: off
+  class-methods-use-this: off
+  indent: ['error', 4]
+  max-statements: ['error', 25]
+  max-len: ['error', {code: 160} ]
+  no-use-before-define: ['error', 'nofunc']
