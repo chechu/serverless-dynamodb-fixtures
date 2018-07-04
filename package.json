@@ -1,6 +1,6 @@
 {
     "name": "serverless-dynamodb-fixtures",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Serverless plugin to load data on DynamoDB tables",
     "main": "index.js",
     "repository": {
@@ -44,6 +44,7 @@
     },
     "dependencies": {
         "aws-sdk": "^2.267.1",
-        "tiny-async-pool": "github:rxaviers/async-pool"
+        "tiny-async-pool": "github:rxaviers/async-pool",
+        "uuid": "^3.3.2"
     }
 }
