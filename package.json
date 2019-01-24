@@ -1,6 +1,6 @@
 {
     "name": "serverless-dynamodb-fixtures",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Serverless plugin to load data on DynamoDB tables",
     "main": "index.js",
     "repository": {
