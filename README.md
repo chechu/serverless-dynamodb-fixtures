@@ -6,7 +6,7 @@
 Serverless plugin to load data on DynamoDB tables.
 
 ## This Plugin Requires
-* [Serverless](https://serverless.com/framework) version > 1.0.0. It has been tested with v1.27.3.
+* [Serverless](https://serverless.com/framework) version > 1.0.0. It has been tested with v1.36.3.
 * Native support of promises: ECMAScript6 - Node 4.9.1
 
 ## Usage
