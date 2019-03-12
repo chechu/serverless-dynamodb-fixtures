@@ -20,13 +20,13 @@
     },
     "homepage": "https://github.com/chechu/serverless-dynamodb-fixtures#readme",
     "devDependencies": {
-        "eslint": "^5.0.1",
+        "eslint": "^5.15.1",
         "eslint-config-airbnb": "^17.0.0",
-        "eslint-plugin-import": "^2.13.0",
+        "eslint-plugin-import": "^2.16.0",
         "eslint-plugin-jest": "^21.17.0",
         "eslint-plugin-jsx-a11y": "^6.0.3",
         "eslint-plugin-react": "^7.10.0",
-        "jest": "^23.2.0"
+        "jest": "^24.5.0"
     },
     "jest": {
         "testEnvironment": "node",
@@ -43,8 +43,8 @@
         "lint": "npx eslint ."
     },
     "dependencies": {
-        "aws-sdk": "^2.267.1",
-        "tiny-async-pool": "github:rxaviers/async-pool",
+        "aws-sdk": "^2.419.0",
+        "tiny-async-pool": "^1.0.4",
         "uuid": "^3.3.2"
     }
 }
