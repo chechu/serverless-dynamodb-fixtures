@@ -30,7 +30,7 @@ class ServerlessPlugin {
     }
 
     loadFixtures(launchByCli) {
-        const fixtures = this.serverless.service.custom.fixtures.rules;
+        const { fixtures } = this.serverless.service.custom;
         if (!fixtures || !fixtures.length) {
             return Promise.resolve();
         }
@@ -100,14 +100,8 @@ class ServerlessPlugin {
     }
 
     getDynamoFunctions() {
-        const options = {};
-
-        if (this.serverless.service.custom.fixtures.endpoint) {
-            options.endpoint = this.serverless.service.custom.fixtures.endpoint;
-        }
-
-        const doc = new AWS.DynamoDB.DocumentClient(options);
-        const raw = new AWS.DynamoDB(options);
+        const doc = new AWS.DynamoDB.DocumentClient();
+        const raw = new AWS.DynamoDB();
 
         return {
             doc: doc.batchWrite.bind(doc),
